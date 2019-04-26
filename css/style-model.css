@@ -27,7 +27,12 @@ html {
   background-position: center;
   background-size: cover;
 }
-
+.nav-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 nav {
     padding: 8px;
 }
@@ -36,7 +41,7 @@ nav {
     float: left;
     padding: 12px;
     margin-left: 16px;
-    margin-top: 8px;
+    margin-top: 1px;
 }
 
 .logo a {
@@ -84,6 +89,7 @@ nav ul li a {
 @media screen and (max-width: 864px) {
     .logo {
           padding: 0;
+          margin-top: 16px;
     }
 
     .nav-wrapper {
@@ -160,7 +166,7 @@ nav ul li a {
           display: block;
           width: 20px;
           height: 2px;
-          background: #000;
+          background: #fff;
           border-radius: 2px;
           margin-left: 14px;
     }
