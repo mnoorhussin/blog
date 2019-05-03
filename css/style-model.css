@@ -355,14 +355,19 @@ nav ul li a {
 
     /*================== BLOG PAGE START ==============*/
 
-    
-.container-blog h1{
+  .container-post{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-top: 100px;
+  }
+.container-post h1{
       padding-bottom: 10px;
       font-size: 18px;
       color: #e74c3c;
 
     }
-    .container-blog section p{
+    .container-post section p{
       padding-top: 10px;
       padding-bottom: 10px;
     }
