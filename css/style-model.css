@@ -1,8 +1,4 @@
-/* RESET - Enlever les styles par défaut des navigateurs
-=================================================================================== */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 
-/* Mettre Box Sizing "border-box" par défaut */
 @import url('https://fonts.googleapis.com/css?family=Aldrich|Roboto|Montserrat');
 
   /* ==================HOME PAGE AREA START ==================*/
@@ -19,11 +15,12 @@ html {
 
 .container {
   margin: 0;
-  padding: 0;
+  padding: 0px;
   width: 100%;
   height: 100vh;
+  width: 100vw;
   font-family: 'roboto' , sans-serif;
-  background: url(../img/main2.jpg);
+  background: url(../img/main3.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -94,32 +91,28 @@ nav ul li a {
     font-weight: 700;
     font-family: 'roboto' sans-serif;
 }
-.download-btn{
+.download-btn {
   font-size:1.3em;
   font-weight: bold;
   font-family: 'roboto', sans-serif;
-  padding:19px;
-  text-align: center;
-  position: absolute;
-  top:70%;
-  left:50%;
-  transform: translate(-50%,-50%);
   background: none;
   text-decoration: none;
-  color: #130f40;
-  width: 170px;
-  height: 60px;
+  color:#fff;
   border: 1px solid #7ed6df;
   border-radius: 4px;
+  padding: 10px;
 }
 
 .download-btn:hover{
-  background-color: #dff9fb;
+  background-color: #34495e;
   cursor: pointer;
   transition: 1s;
-}
+} 
 
 @media screen and (max-width: 864px) {
+.download-btn {
+    display: none;
+  }
     .logo {
           padding: 0;
           margin-top: 16px;
@@ -258,15 +251,12 @@ nav ul li a {
 
 
   /* ================== CONTACT FORM START ==================*/
+
 .contact-form{
     width: 85%;
     max-width: 600px;
     background: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    padding: 30px 40px;
+    padding: 70px 40px;
     box-sizing: border-box;
     border-radius: 8px;
     text-align: center;
