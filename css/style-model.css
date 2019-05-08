@@ -412,6 +412,9 @@ nav ul li a {
 }
 
 /*================== BLOG PAGE END ==============*/
+
+/*================== LOADER ICON START==============*/
+
 .lds-facebook {
   display: inline-block;
   position: relative;
@@ -467,4 +470,6 @@ align-items: center;
 
 opacity:0;
 }
+/*================== LOADER ICON END==============*/
+
 
