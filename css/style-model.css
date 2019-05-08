@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Aldrich|Roboto|Montserrat');
 
   /* ==================HOME PAGE AREA START ==================*/
-  * {
+* {
     box-sizing: border-box;
 }
 
@@ -24,6 +24,7 @@ html {
   background-position: center;
   background-size: cover;
 }
+
 .nav-wrapper {
   position: fixed;
   top: 0;
@@ -64,9 +65,7 @@ nav {
 nav ul {
     float: right;
     padding: 20px;
-
 }
-
 
 nav ul li {
     float: left;
@@ -91,6 +90,7 @@ nav ul li a {
     font-weight: 700;
     font-family: 'roboto' sans-serif;
 }
+
 .download-btn {
   font-size:1.3em;
   font-weight: bold;
@@ -262,18 +262,21 @@ nav ul li a {
     text-align: center;
     font-family: "Montserrat",sans-serif;
   }
+
   .contact-form h1{
     margin: 0 0 20px;
     font-weight: 500;
     font-size: 3rem;
     color: #4b4b4b;
   }
+
   .txtb{
     border:1px solid #4b4b4b;
     margin: 8px 0;
     padding: 12px 18px;
     border-radius: 8px;
   }
+
   .txtb label{
     display: block;
     text-align: left;
@@ -281,6 +284,7 @@ nav ul li a {
     text-transform: uppercase;
     font-size: 14px;
   }
+
   .txtb input,.txtb textarea{
     width: 100%;
     border: none;
@@ -289,6 +293,7 @@ nav ul li a {
     font-size: 18px;
     margin-top: 6px;
   }
+
   .btn{
     display: inline-block;
     background: #4b4b4b;
@@ -309,35 +314,43 @@ nav ul li a {
       background: #f1f1f1;
       padding: 150px 0;
     }
+
     .inner-width{
       max-width: 1000px;
       overflow: hidden;
       padding: 0 20px;
       margin: auto;
     }
+
     .about-section h1{
       text-align: center;
     }
+
     .border{
       width: 100px;
       height: 3px;
       background: #e74c3c;
       margin: 20px auto;
     }
+    
     .about-section-row{
       display: flex;
       flex-wrap: wrap;
     }
+
     .about-section-col{
       flex: 50%;
     }
+
     .about{
       padding-right: 30px;
     }
+
     .about p{
       text-align: justify;
       margin-bottom: 20px;
     }
+
     .about a{
       display: inline-block;
       color: #e74c3c;
@@ -347,11 +360,11 @@ nav ul li a {
       padding: 8px 40px;
       transition: 0.4s linear;
     }
+
     .about a:hover{
       color: #fff;
       background: #e74c3c;
     }
-
 
     @media screen and (max-width:700px) {
       .about-section-col{
@@ -375,6 +388,7 @@ nav ul li a {
     align-items: flex-start;
     padding-top: 100px;
   }
+
 .container-post h1{
       padding-bottom: 10px;
       font-size: 18px;
@@ -385,6 +399,7 @@ nav ul li a {
       padding-top: 10px;
       padding-bottom: 10px;
     }
+    
 .footer-blog {
       padding: 20px;
       font-family: 'roboto' , sans-serif;
