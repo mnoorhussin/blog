@@ -12,6 +12,9 @@
     <title>GAMING</title>
   </head>
   <body>
+    <div id="overlay">
+      <div class="lds-facebook"><div></div><div></div><div></div></div>
+    </div>
     <div class="container">
       <nav>
         <input type="checkbox" id="nav" class="hidden" />
@@ -34,5 +37,14 @@
         </div>
       </nav>
     </div>
+    <script>
+      setTimeout(function() {
+        var overlay = document.getElementById('overlay');
+        overlay.classList.add('hide');
+        setTimeout (function (){
+          overlay.remove()
+        }, 1000)
+      }, 1000)
+    </script>
   </body>
 </html>
