@@ -1,6 +1,8 @@
-# Gaming
-Blog about video games
+# Personal blog
+Blog about random girl
 Will contain :
 - Data of games
-- Articles about video games
+- Articles 
+- contact form
+- about page
 - Users may comment the article
