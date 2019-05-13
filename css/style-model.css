@@ -364,6 +364,11 @@ nav ul li a {
   .about {
     text-align: center;
   }
+  .left-column,
+  .right-column {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 
@@ -373,19 +378,20 @@ nav ul li a {
 /*================== BLOG PAGE START ==============*/
 
 .main-blog {
-  padding: 70px 70px;
+  padding: 70px ;
+}
+
+.blog-row {
+  display: flex;
+  justify-content: space-between;
 }
 
 .left-column {
-  float: left;
-  width: 50%;
-  padding-right: 30px
+  width: 49%;
 }
 
 .right-column {
-  float: right;
-  width: 50%;
-  padding-left: 30px
+  width: 49%;
 }
 
 .img-blog {
@@ -397,25 +403,10 @@ nav ul li a {
 
 .card {
   position: inherit;
-  background-color: white;
   padding: 10px;
   margin-top: 20px;
 }
 
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 20px;
-}
-
-@media screen and (max-width: 800px) {
-  .left-column,
-  .right-column {
-    width: 100%;
-    padding: 0;
-  }
-}
 
 
 /*================== BLOG PAGE END ==============*/
@@ -486,3 +477,12 @@ nav ul li a {
 
 
 /*================== LOADER ICON END==============*/
+
+.footer {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
