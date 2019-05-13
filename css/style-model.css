@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Aldrich|Roboto|Montserrat');
 
 /* ==================HOME PAGE AREA START ==================*/
+
 * {
   box-sizing: border-box;
 }
@@ -19,13 +20,13 @@ html {
   height: 100vh;
   width: 100vw;
   font-family: 'roboto', sans-serif;
-  background: url(../img/main2.jpg);
+  background: url(../img/main1.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .nav-wrapper {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -112,12 +113,10 @@ nav ul li a {
   .download-btn {
     display: none;
   }
-
   .logo {
     padding: 0;
     margin-top: 16px;
   }
-
   .nav-wrapper {
     position: fixed;
     top: 0;
@@ -129,14 +128,12 @@ nav ul li a {
     opacity: 0;
     transition: all 0.2s ease;
   }
-
   .nav-wrapper ul {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
   }
-
   .nav-wrapper ul li {
     display: block;
     float: none;
@@ -144,27 +141,21 @@ nav ul li a {
     text-align: right;
     margin-bottom: 10px;
   }
-
   .nav-wrapper ul li:nth-child(1) a {
     transition-delay: 0.2s;
   }
-
   .nav-wrapper ul li:nth-child(2) a {
     transition-delay: 0.3s;
   }
-
   .nav-wrapper ul li:nth-child(3) a {
     transition-delay: 0.4s;
   }
-
   .nav-wrapper ul li:nth-child(4) a {
     transition-delay: 0.5s;
   }
-
   .nav-wrapper ul li:not(:first-child) {
     margin-left: 0;
   }
-
   .nav-wrapper ul li a {
     padding: 10px 24px;
     opacity: 0;
@@ -175,7 +166,6 @@ nav ul li a {
     transform: translateX(-20px);
     transition: all 0.2s ease;
   }
-
   .nav-btn {
     position: fixed;
     right: 10px;
@@ -187,7 +177,6 @@ nav ul li a {
     z-index: 9999;
     border-radius: 50%;
   }
-
   .nav-btn i {
     display: block;
     width: 20px;
@@ -196,16 +185,13 @@ nav ul li a {
     border-radius: 2px;
     margin-left: 14px;
   }
-
   .nav-btn i:nth-child(1) {
     margin-top: 16px;
   }
-
   .nav-btn i:nth-child(2) {
     margin-top: 4px;
     opacity: 1;
   }
-
   .nav-btn i:nth-child(3) {
     margin-top: 4px;
   }
@@ -255,12 +241,13 @@ nav ul li a {
 .contact-form {
   width: 85%;
   max-width: 600px;
-  background: #fff;
   padding: 70px 40px;
   box-sizing: border-box;
   border-radius: 8px;
   text-align: center;
+  margin: 0 auto;
   font-family: "Montserrat", sans-serif;
+  
 }
 
 .contact-form h1 {
@@ -306,7 +293,9 @@ nav ul li a {
   width: 100%;
 }
 
+
 /* ================== CONTACT FORM END ================== */
+
 
 /*================== ABOUT US PAGE START ==================*/
 
@@ -372,46 +361,65 @@ nav ul li a {
     flex: 100%;
     margin: 10px 0;
   }
-
   .about {
     text-align: center;
   }
 }
 
+
 /*================== ABOUT US PAGE END ==============*/
-
-
 
 
 /*================== BLOG PAGE START ==============*/
 
-.container-post {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  padding-top: 100px;
+.main-blog {
+  padding: 70px 70px;
 }
 
-.container-post h1 {
-  padding-bottom: 10px;
-  font-size: 18px;
-  color: #e74c3c;
+.left-column {
+  float: left;
+  width: 50%;
+  padding-right: 30px
 }
 
-.container-post section p {
-  padding-top: 10px;
-  padding-bottom: 10px;
+.right-column {
+  float: right;
+  width: 50%;
+  padding-left: 30px
 }
 
-.footer-blog {
+.img-blog {
+  background-color: #dcdde1;
+  width: 100%;
   padding: 20px;
-  font-family: 'roboto', sans-serif;
-  text-align: center;
-  background: #313131;
+  height: 300px;
+}
+
+.card {
+  position: inherit;
+  background-color: white;
+  padding: 10px;
   margin-top: 20px;
 }
 
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .left-column,
+  .right-column {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
 /*================== BLOG PAGE END ==============*/
+
 
 /*================== LOADER ICON START==============*/
 
@@ -421,6 +429,7 @@ nav ul li a {
   width: 64px;
   height: 64px;
 }
+
 .lds-facebook div {
   display: inline-block;
   position: absolute;
@@ -429,47 +438,51 @@ nav ul li a {
   background: #dfc;
   animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
 }
+
 .lds-facebook div:nth-child(1) {
   left: 6px;
   animation-delay: -0.24s;
 }
+
 .lds-facebook div:nth-child(2) {
   left: 26px;
   animation-delay: -0.12s;
 }
+
 .lds-facebook div:nth-child(3) {
   left: 45px;
   animation-delay: 0;
 }
+
 @keyframes lds-facebook {
   0% {
     top: 6px;
     height: 51px;
   }
-  50%, 100% {
+  50%,
+  100% {
     top: 19px;
     height: 26px;
   }
 }
-#overlay{
-transition:  all 1s ease;
-z-index: 999;
-display: flex;
-position: fixed;
-background: grey;
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
-justify-content: center;
-align-items: center;
 
+#overlay {
+  transition: all 1s ease;
+  z-index: 999;
+  display: flex;
+  position: fixed;
+  background: grey;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
 }
 
-#overlay.hide{
-
-opacity:0;
+#overlay.hide {
+  opacity: 0;
 }
+
+
 /*================== LOADER ICON END==============*/
-
-
