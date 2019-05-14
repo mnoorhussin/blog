@@ -30,6 +30,7 @@ html {
   top: 0;
   left: 0;
   width: 100%;
+  
 }
 
 nav {
@@ -69,6 +70,16 @@ nav ul {
 
 nav ul li {
   float: left;
+  text-decoration: none;
+
+}
+nav ul li a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li, a:hover {
+  text-decoration: none;
 }
 
 nav ul li:not(:first-child) {
@@ -89,6 +100,7 @@ nav ul li a {
   letter-spacing: 1.2px;
   font-weight: 700;
   font-family: 'roboto'sans-serif;
+
 }
 
 .download-btn {
@@ -238,6 +250,7 @@ nav ul li a {
 
 /* ================== CONTACT FORM START ==================*/
 
+
 .contact-form {
   width: 85%;
   max-width: 600px;
@@ -291,7 +304,7 @@ nav ul li a {
   cursor: pointer;
   margin-top: 8px;
   width: 100%;
-}
+} 
 
 
 /* ================== CONTACT FORM END ================== */
@@ -341,19 +354,17 @@ nav ul li a {
   margin-bottom: 20px;
 }
 
-.about a {
+.about-btn {
   display: inline-block;
-  color: #e74c3c;
   text-decoration: none;
   border: 2px solid #e74c3c;
   border-radius: 24px;
   padding: 8px 40px;
-  transition: 0.4s linear;
 }
 
-.about a:hover {
-  color: #fff;
+.about-btn:hover {
   background: #e74c3c;
+  text-decoration: none;
 }
 
 @media screen and (max-width:700px) {
@@ -379,6 +390,7 @@ nav ul li a {
 
 .main-blog {
   padding: 70px ;
+  
 }
 
 .blog-row {
