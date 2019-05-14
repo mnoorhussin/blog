@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Aldrich|Roboto|Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Aldrich|Roboto|Ubuntu');
 
 /* ==================HOME PAGE AREA START ==================*/
 
@@ -25,7 +25,7 @@ html {
   background-size: cover;
 }
 
-.nav-wrapper {
+.nav-wrapper{
   position: absolute;
   top: 0;
   left: 0;
@@ -50,7 +50,7 @@ nav {
   float: left;
   padding: 12px;
   margin-left: 16px;
-  margin-top: 1px;
+  margin-top: 8px;
 }
 
 .logo a {
@@ -125,7 +125,8 @@ nav ul li a {
   .download-btn {
     display: none;
   }
-  .logo {
+  .logo{
+  
     padding: 0;
     margin-top: 16px;
   }
@@ -259,7 +260,7 @@ nav ul li a {
   border-radius: 8px;
   text-align: center;
   margin: 0 auto;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   
 }
 
@@ -313,6 +314,7 @@ nav ul li a {
 /*================== ABOUT US PAGE START ==================*/
 
 .about-section {
+  font-family: Ubuntu;
   width: 100%;
   background: #f1f1f1;
   padding: 150px 0;
@@ -355,6 +357,7 @@ nav ul li a {
 }
 
 .about-btn {
+  font-family: Ubuntu;
   display: inline-block;
   text-decoration: none;
   border: 2px solid #e74c3c;
@@ -392,24 +395,28 @@ nav ul li a {
   padding: 70px ;
   
 }
+.main-blog h2,h6{
+  font-family: Ubuntu;
+
+}
+.main-blog p{
+  font-family: roboto;
+
+}
 
 .blog-row {
   display: flex;
   justify-content: space-between;
 }
 
-.left-column {
-  width: 49%;
+.left-column ,.right-column {
+  width: 48%;
 }
 
-.right-column {
-  width: 49%;
-}
 
 .img-blog {
-  background-color: #dcdde1;
   width: 100%;
-  padding: 20px;
+  padding: 5px;
   height: 300px;
 }
 
@@ -419,7 +426,18 @@ nav ul li a {
   margin-top: 20px;
 }
 
+@media only screen and (max-width: 800px) {
 
+  .blog-row {
+    display: block;
+  }
+  
+
+  .left-column ,.right-column {
+    width: 100%;
+  }
+  
+}
 
 /*================== BLOG PAGE END ==============*/
 
