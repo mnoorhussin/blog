@@ -131,3 +131,6 @@ table {
 }
 
 /* Mettre Box Sizing "border-box" par défaut */
+html {
+  box-sizing: border-box;
+}
