@@ -382,12 +382,16 @@ nav ul li a {
   padding: 70px ;
   
 }
-.main-blog h2,h6{
-  font-family: Ubuntu;
+.main-blog h1,h6{
+  font-family: 'Ubuntu', sans-serif;
 
 }
-.main-blog p{
-  font-family: roboto;
+.main-blog h1{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2em;
+}
+.main-blog p {
+  font-family: 'Roboto', sans-serif;
 
 }
 
